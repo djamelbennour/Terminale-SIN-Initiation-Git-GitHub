@@ -1,0 +1,28 @@
+name: Validation des défis
+
+on:
+  push:
+    branches: [main, feature-design]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validation-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Installer Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Vérifier la progression
+        run: python .github/scripts/validate_progress.py
