@@ -1,14 +1,21 @@
 # 🔵 Défi 05 — Lire l'historique
 
-Affichez l'historique :
+**Niveau : guidé**
+
+## 🎯 Objectif
+Découvrir que chaque commit possède un identifiant et un message.
+
 ```bash
 git log --oneline
 ```
 
-Repérez :
-- le hash du dernier commit ;
-- son message.
+Repérez le commit **Défi 04 - Compte rendu** ou le dernier commit affiché.
 
-Créez `travail/preuves/defi05.txt` et recopiez ces deux informations. Expliquez en une phrase à quoi sert l'historique Git.
+Dans `travail/preuves/defi05.txt`, indiquez :
+1. son hash court ;
+2. son message ;
+3. à quoi sert selon vous l'historique Git.
 
-Puis utilisez les commandes que vous connaissez déjà pour ajouter, committer et pousser votre preuve.
+Puis utilisez les commandes déjà apprises pour **préparer, committer et pousser** votre preuve.
+
+> 💡 Le hash est l'identifiant du commit. Vous n'avez pas besoin de le mémoriser.
