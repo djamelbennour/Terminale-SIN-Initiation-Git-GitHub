@@ -32,7 +32,13 @@ def valid(n):
     if n==8:
         return proof(8) and "secret.txt" in read(WORK/".gitignore") and not tracked(WORK/"secret.txt")
     if n==9: return proof(9) and bool(git("rev-parse","--verify","feature-design"))
-    if n==10: return proof(10) and "design sin" in read(WORK/"style.css").lower()
+    if n==10:
+        return (
+            proof(10)
+            and "design sin" in read(WORK/"style.css").lower()
+            and bool(git("rev-parse","--verify","feature-design"))
+            and subprocess.run(["git","merge-base","--is-ancestor","feature-design","main"],cwd=ROOT,capture_output=True).returncode==0
+        )
     if n==11: return proof(11) and bool(git("remote","get-url","origin"))
     if n==12:
         t=read(WORK/"projet-final.html").lower()
