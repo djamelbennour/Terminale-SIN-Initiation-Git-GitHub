@@ -1,35 +1,83 @@
-# 🎓 Terminale STI2D — SIN | Initiation à Git & GitHub
+<div align="center">
 
-> **12 défis progressifs** pour découvrir Git et GitHub en réalisant un mini-site web.
+# 🎓 Terminale STI2D — SIN | Git & GitHub
+
+### 12 défis progressifs pour apprendre Git en pratiquant
+
+**Du premier clone à un mini-projet versionné — avec validation automatique**
+
+</div>
+
+---
 
 ## 🎯 Objectif
 
-À la fin de l'activité, vous saurez enregistrer les versions d'un projet, créer des commits, consulter l'historique, travailler avec une branche et synchroniser votre travail avec GitHub.
-
-## 🚀 Progression
+Découvrir **Git et GitHub** en construisant progressivement un mini-projet web lié aux systèmes numériques. L'objectif n'est pas de mémoriser des commandes, mais de comprendre **ce que fait Git** et d'acquérir de bons réflexes.
 
 | Étape | Défis | Compétences |
-|---|:---:|---|
-| 🟢 Premiers pas | 01 → 03 | clone · configuration · status |
-| 🔵 Premiers commits | 04 → 06 | add · commit · log · diff |
-| 🟠 Corriger et protéger | 07 → 08 | restore · .gitignore |
-| 🟣 Travailler avec une branche | 09 → 10 | branch · switch · merge |
-| 🏁 GitHub | 11 → 12 | origin · push · mini-projet final |
+|---|---:|---|
+| 🟢 Découverte | 01–03 | clone, identité, status, add |
+| 🔵 Historique | 04–06 | commit, log, diff |
+| 🟠 Corriger et protéger | 07–08 | restore, .gitignore |
+| 🟣 Branches | 09–10 | branch, switch, push -u, merge |
+| 🏁 Autonomie | 11–12 | origin, local/distant, mini-projet final |
 
-## ▶️ Commencer
+## 🚦 Fonctionnement
 
-➡️ **[Défi 01 — Découvrir Git](defis/defi-01.md)**
+1. Réalisez uniquement le défi affiché.
+2. À partir du Défi 03, complétez votre **carnet de bord** dans `travail/preuves/`.
+3. Faites `git add`, `git commit`, puis `git push`.
+4. Sur GitHub, ouvrez **Actions → Validation des défis**.
+5. Consultez le résumé : il valide votre progression, affiche une aide en cas de blocage et révèle le défi suivant.
 
-## 🆘 En cas de problème
+> 💡 Les premiers défis sont très guidés. Les consignes diminuent progressivement pour vous rendre autonome.
 
-Commencez par :
+<div align="center">
+
+### [🚀 Commencer le Défi 01](defis/defi-01.md)
+
+</div>
+
+## 🧠 Le réflexe Git
+
+```text
+Modifier un fichier
+      ↓
+  git status
+      ↓
+   git add
+      ↓
+  git commit
+      ↓
+   git push
+      ↓
+    GitHub
+```
+
+## 📚 Ressources
+
+| Support | Utilité |
+|---|---|
+| [📘 **L'essentiel à retenir**](docs/COURS-GIT-GITHUB.md) | Comprendre Git, GitHub et les commandes utilisées |
+| [🧰 **Fiche mémo**](docs/FICHE-MEMO.md) | Retrouver rapidement une commande ou diagnostiquer une erreur |
+| [🚀 **Pour aller plus loin**](docs/POUR-ALLER-PLUS-LOIN.md) | Découvrir la suite après les 12 défis |
+
+## 🆘 En cas de blocage
+
+Ne tapez pas des commandes au hasard. Commencez par :
 
 ```bash
 git status
 ```
 
-Puis consultez **Actions → Validation des défis** pour connaître votre progression.
+Puis relisez le résumé de **Actions → Validation des défis**.
+
+> ⚠️ Ne modifiez jamais le dossier `.github/` : il contient le système de validation automatique.
 
 ---
 
-**Terminale STI2D — Spécialité SIN · Lycée Jean Rostand**
+<div align="center">
+
+**Terminale STI2D — Spécialité SIN · Lycée Jean Rostand — Villepinte**
+
+</div>
